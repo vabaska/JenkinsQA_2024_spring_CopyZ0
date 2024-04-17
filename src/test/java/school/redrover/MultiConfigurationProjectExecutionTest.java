@@ -47,8 +47,11 @@ public class MultiConfigurationProjectExecutionTest extends BaseTest {
 
         getDriver().findElement(By.name("Submit")).click();
 
-        final String actualResult = getDriver().findElement(By.xpath("//a[@data-build-success='Build scheduled']/span[@class='task-link-text']")).getText();
+        final String actualResult = getDriver()
+                .findElement(By.xpath("//a[@data-build-success='Build scheduled']/span[@class='task-link-text']")).getText();
+
 
         Assert.assertEquals(actualResult, "Build Now");
+
     }
 }
