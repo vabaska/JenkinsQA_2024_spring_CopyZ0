@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import school.redrover.runner.BaseTest;
 
-public class RenameProject extends BaseTest {
+public class FreestyleProjectTest extends BaseTest {
 
     private void createFreestyleProject() {
         getDriver().findElement(By.linkText("New Item")).click();
